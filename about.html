@@ -5,26 +5,34 @@
     <title>About Us | Pak Web Developer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        :root { --bg: #e0e5ec; --shadow: 7px 7px 12px rgb(163,177,198,0.5), -7px -7px 12px rgba(255,255,255, 0.5); --accent: #00a884; }
-        body { background: var(--bg); font-family: 'Poppins', sans-serif; text-align: center; }
-        nav { padding: 20px 8%; display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-weight: 800; color: var(--accent); padding: 10px; border-radius: 10px; box-shadow: var(--shadow); }
-        .nav-links a { text-decoration: none; color: #666; margin-left: 15px; padding: 10px; border-radius: 10px; box-shadow: var(--shadow); }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; padding: 50px 8%; }
-        .p-card { background: var(--bg); padding: 30px; border-radius: 20px; box-shadow: var(--shadow); }
-        .img-box { width: 120px; height: 120px; margin: 0 auto 20px; border-radius: 50%; box-shadow: inset 4px 4px 6px rgba(0,0,0,0.1); overflow: hidden; border: 5px solid var(--bg); }
-        .img-box img { width: 100%; height: 100%; object-fit: cover; }
+        /* CSS Same as Index */
+        .container { padding:80px 8%; }
+        .team-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:30px; margin-top:50px; }
+        .member-card { background:#fff; padding:30px; border-radius:15px; border:1px solid #eee; text-align:center; transition:0.3s; }
+        .member-card:hover { border-color:#00a884; transform:translateY(-10px); }
+        .member-card img { width:120px; height:120px; border-radius:50%; object-fit:cover; margin-bottom:20px; border:5px solid #f0fff4; }
+        .member-card h3 { margin-bottom:5px; }
+        .member-card p { color:#00a884; font-weight:bold; font-size:0.8rem; text-transform:uppercase; }
+        .bio-section { display:flex; gap:50px; align-items:center; margin-bottom:100px; }
     </style>
 </head>
 <body>
-    <nav><div class="logo">Pak Web Developer</div><div class="nav-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="portfolio.html">Portfolio</a><a href="contact.html">Contact</a></div></nav>
-    <h1>Our Professional Team</h1>
-    <div class="grid">
-        <div class="p-card"><div class="img-box"><img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Awais"></div><h3>Awais Developer</h3><p>Founder</p></div>
-        <div class="p-card"><div class="img-box"><img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Haseeb"></div><h3>Haseeb Developer</h3><p>Co-Founder</p></div>
-        <div class="p-card"><div class="img-box"><img src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Manager"></div><h3>Sarah Jenkins</h3><p>UK Project Manager</p></div>
-        <div class="p-card"><div class="img-box"><img src="https://images.pexels.com/photos/1181424/pexels-photo-1181424.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Manager"></div><h3>Emily Watson</h3><p>Senior Coordinator</p></div>
+    <nav>...</nav> <div class="container">
+        <div class="bio-section">
+            <div style="flex:1">
+                <h2 style="font-size:2.5rem; margin-bottom:20px;">The Masterminds Behind Pak Web Developer</h2>
+                <p>Pak Web Developer was founded by <b>Awais and Haseeb</b> with a single vision: To eliminate slow and insecure websites from the internet. Based in Pakistan, we work with international talent to provide elite web solutions.</p>
+                <p style="margin-top:15px; direction:rtl; text-align:right;">ہمارا مقصد انٹرنیٹ سے سست اور غیر محفوظ ویب سائٹس کا خاتمہ کرنا ہے۔</p>
+            </div>
+        </div>
+
+        <h2 style="text-align:center">Meet Our Global Team</h2>
+        <div class="team-grid">
+            <div class="member-card"><img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?w=200"><h3>Awais Developer</h3><p>Lead Architect</p></div>
+            <div class="member-card"><img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?w=200"><h3>Haseeb Developer</h3><p>Security Head</p></div>
+            <div class="member-card"><img src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?w=200"><h3>Sophia Williams</h3><p>UK Project Manager</p></div>
+            <div class="member-card"><img src="https://images.pexels.com/photos/1181424/pexels-photo-1181424.jpeg?w=200"><h3>Isabella Ross</h3><p>Technical Coordinator</p></div>
+        </div>
     </div>
 </body>
 </html>
- 
