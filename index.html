@@ -3,63 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pak Web Developer | Premium Custom Solutions</title>
+    <title>Home | Pak Web Developer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        :root {
-            --amazon-dark: #131921;
-            --amazon-gold: #febd69;
-            --premium-green: #00a884;
-            --glass: rgba(255, 255, 255, 0.05);
-            --text-gray: #cccccc;
-        }
-
-        * {
-            margin: 0; padding: 0; box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-            scroll-behavior: smooth;
-        }
-
-        body {
-            background-color: var(--amazon-dark);
-            color: white;
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
-
-        /* Glassmorphism Navigation */
-        nav {
-            background: rgba(19, 25, 33, 0.8);
-            backdrop-filter: blur(10px);
-            padding: 15px 8%;
-            display: flex; justify-content: space-between; align-items: center;
-            position: fixed; width: 100%; z-index: 1000;
-            border-bottom: 1px solid rgba(255,255,255,0.1);
-        }
-
-        .logo { font-size: 1.8rem; font-weight: 800; color: var(--amazon-gold); }
-        .logo span { color: white; font-weight: 300; }
-
-        .nav-links { display: flex; list-style: none; }
-        .nav-links li { margin-left: 25px; }
-        .nav-links a { color: white; text-decoration: none; font-size: 0.9rem; transition: 0.3s; opacity: 0.8; }
-        .nav-links a:hover { color: var(--amazon-gold); opacity: 1; }
-
-        /* Premium Hero Section */
-        .hero {
-            height: 100vh;
-            display: flex; flex-direction: column; justify-content: center; align-items: center;
-            background: radial-gradient(circle at center, #1e293b 0%, #131921 100%);
-            text-align: center; padding: 0 10%;
-        }
-
-        .hero h1 { font-size: 4rem; margin-bottom: 20px; letter-spacing: -1px; }
-        .hero h1 span { color: var(--amazon-gold); }
-        
-        .hero p { color: var(--text-gray); font-size: 1.2rem; max-width: 800px; margin-bottom: 30px; }
-
-        /* Multilingual Description Box */
-        .desc-box {
+        :root { --bg: #e0e5ec; --shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px rgba(255,255,255, 0.5); --inner: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.1), inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5); --accent: #00a884; }
+        body { background: var(--bg); font-family: 'Poppins', sans-serif; margin: 0; }
+        nav { padding: 20px 8%; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-weight: 800; color: var(--accent); padding: 10px; border-radius: 10px; box-shadow: var(--shadow); }
+        .nav-links a { text-decoration: none; color: #666; margin-left: 15px; padding: 10px 15px; border-radius: 10px; box-shadow: var(--shadow); transition: 0.3s; }
+        .nav-links a:hover { box-shadow: var(--inner); }
+        .hero { height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
+        .card { background: var(--bg); padding: 50px; border-radius: 30px; box-shadow: var(--shadow); max-width: 800px; }
+        h1 { font-size: 3rem; color: #333; }
+        .btn { margin-top: 30px; display: inline-block; padding: 15px 40px; border-radius: 50px; box-shadow: var(--shadow); color: #444; text-decoration: none; font-weight: bold; }
+        .btn:hover { box-shadow: var(--inner); }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Pak Web Developer</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+    <div class="hero">
+        <div class="card">
+            <h1>Building <span style="color:var(--accent)">3D Digital</span> Future</h1>
+            <p>Custom Coding by Awais & Haseeb. We deliver excellence.</p>
+            <a href="portfolio.html" class="btn">View Our Work</a>
+        </div>
+    </div>
+</body>
+</html>
             background: var(--glass);
             padding: 20px; border-radius: 15px;
             border: 1px solid rgba(255,255,255,0.1);
